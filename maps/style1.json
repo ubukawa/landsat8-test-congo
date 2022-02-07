@@ -1,7 +1,7 @@
 {
     "version":8,
 "sources":{
-"r": {"type": "raster","tiles": ["https://ubukawa.github.io/sentinel2-Beijin20220102/20220102/{z}/{x}/{y}.png"],"attribution": "Copernicus Sentinel data (2022, EUROPEAN COMMISSION).<br>Observed on 2022-01-02","tileSize": 256,"maxzoom": 14},
+"r": {"type": "raster","tiles": ["https://ubukawa.github.io/landsat8-test-congo/20211201/{z}/{x}/{y}.png"],"attribution": "Copernicus Sentinel data (2022, EUROPEAN COMMISSION).<br>Observed on 2022-01-02","tileSize": 256,"maxzoom": 14},
 "v": {"type": "vector","tiles": ["https://ubukawa.github.io/VT-test-0614/ne-test/{z}/{x}/{y}.pbf"],"attribution": "NaturalEarth - only for test","minzoom": 0,"maxzoom": 5}
 },
 "sprite": "https://ubukawa.github.io/VT-test-0614/sprite/sprite",

@@ -6,7 +6,7 @@ test of the landsat8 comparison (Kinshasa and Brazzaville) -Path and row is 182-
 * Spatial Resolution: 30 meter
 * Processing level: L2SP (Surface reflectance)
 * Scene Path and Row: 182-063 (around Kinshasa and Brazzaville, see WRS2 for detail)
-* Obtained date: 2021- and 2013-
+* Obtained date: 2021-12-01 and 2013-07-28
 
 # Raster tile info
 Color combination is the true colore (B4 B3, B2).
