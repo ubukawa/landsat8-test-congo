@@ -3,8 +3,8 @@
 <meta charset='utf-8' />
 <title>Comparison Map Landsat 8 - 2021 an 2013 (pathRow 182-063)</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://ubukawa.github.io/sentinel2-Beijin20220102/maps/maplibre-gl.js'></script>
-<link href='https://ubukawa.github.io/sentinel2-Beijin20220102/maps/maplibre-gl.css' rel='stylesheet' />
+<script src='https://ubukawa.github.io/landsat8-test-congo/maps/maplibre-gl.js'></script>
+<link href='https://ubukawa.github.io/landsat8-test-congo/maps/maplibre-gl.css' rel='stylesheet' />
 
 <style>
 body { margin:0; padding:0; }
@@ -49,7 +49,7 @@ body { margin:0; padding:0; }
     hash: true, 
     style: 'https://ubukawa.github.io/landsat8-test-congo/maps/style2.json', // style file path
     center: [15.2802544, -4.3358082], // center [lng, lat]
-    zoom: 7, // zoom level at loading
+    zoom: 4, // zoom level at loading
     maxZoom: 0, // min zoom
     maxZoom: 14 // max zoom
   });
@@ -57,9 +57,9 @@ body { margin:0; padding:0; }
   var afterMap = new maplibregl.Map({
     container: 'after', 
     hash: true, 
-    style: 'https://ubukawa.github.io/landsat8-test-congo/maps/style1', // style file path
+    style: 'https://ubukawa.github.io/landsat8-test-congo/maps/style1.json', // style file path
     center: [15.2802544, -4.3358082], // center [lng, lat]
-    zoom: 7, // zoom level at loading
+    zoom: 4, // zoom level at loading
     maxZoom: 0, // min zoom
     maxZoom: 14 // max zoom
   });
