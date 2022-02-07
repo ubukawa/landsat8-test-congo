@@ -1,9 +1,56 @@
 {
     "version":8,
 "sources":{
-"r": {"type": "raster","tiles": ["https://ubukawa.github.io/sentinel2-Beijin20220102/20220102/{z}/{x}/{y}.png"],"attribution": "Copernicus Sentinel data (2022, EUROPEAN COMMISSION).<br>Observed on 2022-01-02","tileSize": 256,"maxzoom": 14}},
+"r": {"type": "raster","tiles": ["https://ubukawa.github.io/sentinel2-Beijin20220102/20220102/{z}/{x}/{y}.png"],"attribution": "Copernicus Sentinel data (2022, EUROPEAN COMMISSION).<br>Observed on 2022-01-02","tileSize": 256,"maxzoom": 14},
+"v": {"type": "vector","tiles": ["https://ubukawa.github.io/VT-test-0614/ne-test/{z}/{x}/{y}.pbf"],"attribution": "NaturalEarth - only for test","minzoom": 0,"maxzoom": 5}
+},
+"sprite": "https://ubukawa.github.io/VT-test-0614/sprite/sprite",
+"glyphs": "https://ubukawa.github.io/VT-test-0614/font/{fontstack}/{range}.pbf",
 "layers":[
-{"id": "sentinel2","type":"raster","source":"r"}
+    {
+      "id": "background",
+      "type": "background",
+      "maxzoom": 5,
+      "paint": {"background-color": "rgba(240, 252, 255, 1)"}
+    },
+    {
+      "id": "landmass",
+      "type": "fill",
+      "source": "ne-test",
+      "source-layer": "landmass",
+      "maxzoom": 5,
+      "paint": {"fill-color": "rgba(174, 255, 147, 1)"}
+    },
+{"id": "sentinel2","type":"raster","source":"r"},
+    {
+      "id": "coastline",
+      "type": "line",
+      "source": "ne-test",
+      "source-layer": "coastl",
+      "maxzoom": 5,
+      "paint": {"line-color": "rgba(58, 0, 160, 1)"}
+    },
+    {
+      "id": "bndl",
+      "type": "line",
+      "source": "ne-test",
+      "source-layer": "bndl",
+      "maxzoom": 5,
+      "paint": {"line-color": "rgba(138, 138, 138, 1)"}
+    },
+    {
+      "id": "popp",
+      "type": "symbol",
+      "source": "ne-test",
+      "source-layer": "popp",
+      "minzoom": 2,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": ["sans"],
+        "text-field": "{NAME}",
+        "icon-image": "national_capital",
+        "text-offset": [1, 1]
+      }
 ],
-"center":[116.3451217, 40.0132106]
+"center":[15.2802544, -4.3358082]
 }
